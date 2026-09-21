@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CodeScrum — Materiais escolares</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="header">
+    <div class="container nav">
+      <a href="#" class="logo"><span>Code</span>Scrum</a>
+      <nav class="menu">
+        <a href="#inicio">Início</a>
+        <a href="#categorias">Categorias</a>
+        <a href="#produtos">Produtos</a>
+        <a href="#kits">Kits</a>
+        <a href="#sobre">Sobre</a>
+      </nav>
+      <button class="cart-btn" id="openCart" aria-label="Abrir carrinho">
+        🛒 <span>Carrinho</span> <b id="cartCount">0</b>
+      </button>
+      <button class="mobile-menu" id="mobileMenu">☰</button>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" id="inicio">
+      <div class="container hero-grid">
+        <div class="hero-text">
+          <span class="eyebrow">VOLTA ÀS AULAS 2026</span>
+          <h1>Tudo o que o estudante precisa em <span>um só lugar.</span></h1>
+          <p>Simplifique a compra de materiais escolares. Kits completos, produtos organizados e tudo pronto para começar o ano.</p>
+          <div class="hero-actions">
+            <a href="#produtos" class="btn primary">Ver catálogo</a>
+            <a href="#kits" class="btn secondary">Montar meu kit</a>
+          </div>
+          <div class="benefits">
+            <span>✓ Frete grátis acima de R$ 199</span>
+            <span>✓ Kits organizados</span>
+            <span>✓ Compra simples</span>
+          </div>
+        </div>
+        <div class="hero-card">
+          <div class="discount">-20% OFF</div>
+          <div class="school-illustration">
+            <div class="book b1">📕</div>
+            <div class="book b2">📘</div>
+            <div class="pencil">✏️</div>
+            <div class="ruler">📏</div>
+            <div class="bag">🎒</div>
+          </div>
+          <h3>Kit volta às aulas</h3>
+          <p>Materiais selecionados para facilitar sua compra.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="categorias">
+      <div class="container">
+        <div class="section-heading">
+          <div><span class="eyebrow">ENCONTRE RÁPIDO</span><h2>Explorar por categoria</h2></div>
+          <p>Escolha uma categoria para filtrar os produtos.</p>
+        </div>
+        <div class="categories">
+          <button class="category active" data-category="Todos">📦<strong>Todos</strong></button>
+          <button class="category" data-category="Cadernos">📓<strong>Cadernos</strong></button>
+          <button class="category" data-category="Escrita">🖊️<strong>Escrita</strong></button>
+          <button class="category" data-category="Mochilas">🎒<strong>Mochilas</strong></button>
+          <button class="category" data-category="Estojos">🧰<strong>Estojos</strong></button>
+          <button class="category" data-category="Arte">🎨<strong>Arte</strong></button>
+          <button class="category" data-category="Acessórios">📐<strong>Acessórios</strong></button>
+          <button class="category" data-category="Kits">🎁<strong>Kits</strong></button>
+        </div>
+      </div>
+    </section>
+
+    <section class="section products-section" id="produtos">
+      <div class="container">
+        <div class="section-heading">
+          <div><span class="eyebrow">MAIS VENDIDOS</span><h2>Produtos em destaque</h2></div>
+          <div class="search-box"><span>⌕</span><input id="search" type="search" placeholder="Buscar produto..."></div>
+        </div>
+        <div class="products" id="products"></div>
+        <p class="empty" id="empty">Nenhum produto encontrado.</p>
+      </div>
+    </section>
+
+    <section class="kits section" id="kits">
+      <div class="container">
+        <div class="section-heading light">
+          <div><span class="eyebrow">KITS PRONTOS</span><h2>Kits escolares completos</h2></div>
+          <p>Uma opção prática para cada etapa da jornada escolar.</p>
+        </div>
+        <div class="kit-grid" id="kitGrid"></div>
+      </div>
+    </section>
+
+    <section class="section how">
+      <div class="container">
+        <div class="section-heading centered">
+          <span class="eyebrow">SIMPLES E RÁPIDO</span>
+          <h2>Como funciona</h2>
+          <p>Três passos para receber tudo o que o estudante precisa.</p>
+        </div>
+        <div class="steps">
+          <article><b>01</b><h3>Escolha os produtos</h3><p>Selecione um kit completo ou monte sua própria lista.</p></article>
+          <article><b>02</b><h3>Personalize e finalize</h3><p>Ajuste quantidades e confira seu carrinho antes de finalizar.</p></article>
+          <article><b>03</b><h3>Receba em casa</h3><p>Organize seus materiais e deixe tudo pronto para as aulas.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="newsletter" id="sobre">
+      <div class="container newsletter-box">
+        <div><span class="eyebrow">NOVIDADES</span><h2>Educação ao alcance de todos.</h2><p>Receba promoções e novidades da CodeScrum.</p></div>
+        <form id="newsletterForm"><input type="email" id="email" placeholder="seu@email.com" required><button class="btn primary">Inscrever</button></form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div><a href="#" class="logo"><span>Code</span>Scrum</a><p>Materiais escolares ao alcance de todos.</p></div>
+      <div><h4>Navegação</h4><a href="#produtos">Catálogo</a><a href="#kits">Kits</a><a href="#sobre">Sobre nós</a></div>
+      <div><h4>Contato</h4><p>contato@codescrum.com.br</p><p>(11) 4002-8922</p></div>
+    </div>
+    <div class="copyright">© 2026 CodeScrum. Todos os direitos reservados.</div>
+  </footer>
+
+  <aside class="cart" id="cart">
+    <div class="cart-header"><h2>Seu carrinho</h2><button id="closeCart">✕</button></div>
+    <div class="cart-items" id="cartItems"></div>
+    <div class="cart-footer"><div><span>Total</span><strong id="cartTotal">R$ 0,00</strong></div><button class="btn primary full" id="checkout">Finalizar pedido</button></div>
+  </aside>
+  <div class="overlay" id="overlay"></div>
+  <div class="toast" id="toast"></div>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
